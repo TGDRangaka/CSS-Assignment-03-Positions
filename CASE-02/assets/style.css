@@ -4,7 +4,6 @@ header {
     position: relative;
     border-bottom: 2px solid black;
 }
-
 header>img {
     max-width: 12%;
     position: absolute;
@@ -25,19 +24,20 @@ header>nav>ol {
     display: inline;
 }
 header>nav>ol>li {
-    display: inline-block;
+    display: inline;
     font-size: 30px;
     margin-left: 15px;
 }
 
 main {
-    display: flex;
+    position: relative;
 }
 
-main>span {
+main>div {
     width: 20vw;
-    min-height: 90vh;
+    height: 100%;
     background-color: mediumpurple;
+    position: absolute;
 }
 
 main>span>h2 {
@@ -47,22 +47,24 @@ main>span>h2 {
     font-family: Arial;
 }
 
+.images {
+    height: 300px;
+    position: relative;
+}
+
+.images>div {
+    width: 909px;
+    max-height: 300px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
 main>section {
-    width: 80vw;
-    min-height: 90vh;
-}
-
-main>section>div {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-}
-
-main>section>div>img {
-    max-width: 30%;
-    width: 300px;
-    margin: 5px;
+    width: 80%;
+    position: relative;
+    left: 20%;
 }
 
 main>section>p {
@@ -70,6 +72,7 @@ main>section>p {
     font-size: 16px;
     text-align: justify;
     font-family: 'Share Tech Mono', monospace;
+    margin: 0;
 }
 
 footer {
