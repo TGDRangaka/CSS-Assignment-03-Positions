@@ -25,7 +25,7 @@ header>nav>ol {
 }
 header>nav>ol>li {
     display: inline;
-    font-size: 30px;
+    font-size: 20px;
     margin-left: 15px;
 }
 
@@ -40,25 +40,40 @@ main>div {
     position: absolute;
 }
 
-main>span>h2 {
+main>div>h2 {
     padding: 20px 0 0 40px;
     font-size: 20px;
     font-weight: lighter;
     font-family: Arial;
 }
 
+/*.images {*/
+/*    height: 300px;*/
+/*    position: relative;*/
+/*}*/
+
+/*.images>div {*/
+/*    width: 909px;*/
+/*    max-height: 300px;*/
+/*    position: absolute;*/
+/*    left: 0;*/
+/*    right: 0;*/
+/*    margin: auto;*/
+/*}*/
+
 .images {
-    height: 300px;
+    height: 450px;
     position: relative;
 }
-
 .images>div {
-    width: 909px;
-    max-height: 300px;
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin: auto;
+    background-image: url("img/giphy.gif");
+    background-size: cover;
+    background-position: center;
+    border: 1px solid greenyellow;
+    display: inline-block;
+    width: calc(100% / 3);
+    aspect-ratio: 1/1;
+    margin-right: -0.5%;
 }
 
 main>section {
@@ -68,7 +83,7 @@ main>section {
 }
 
 main>section>p {
-    padding: 0 15px;
+    padding: 0 10px;
     font-size: 16px;
     text-align: justify;
     font-family: 'Share Tech Mono', monospace;
